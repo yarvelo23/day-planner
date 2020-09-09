@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--bootstrap links-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,7 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-  </head>
+</head>
 
   <body>
     <header class="jumbotron">
@@ -30,9 +32,29 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+        <!--8AM TIMEBLOCK-->
+        <div class="input-group input-group-lg" data-hour="8">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block1"></span>
+            </div>
+            <input type="text" class="form-control form8" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+    
+        <!--9AM TIMEBLOCK-->
+        <div class="input-group input-group-lg" data-hour="9">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block2"></span>
+            </div>
+            <input type="text" class="form-control form9" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+    
+    
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
