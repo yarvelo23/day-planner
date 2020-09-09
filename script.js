@@ -63,3 +63,22 @@ var time10 = startTime.add(1, "h");
 time10 = time10.format('hh:mm A');
 $(".block10").text(time10);
 
+// function to check current time and apply css styling accordingly
+function verifyTime() {
+    // incorporates 8am time as the starting reference time
+    time1 = moment().startOf('day').add(8, "hours");
+    // rounding the current time to the start of the hour
+    currentTime = currentTime.startOf("hour");
+
+    // conditional statements to apply styling to time slot
+    if (currentTime.isAfter(time1)) {
+        $(".form8").addClass("past");
+    }
+    else if (currentTime.isBefore(time1)) {
+        $(".form9").addClass("future");
+    }
+    else if (currentTime.isSame(time1)) {
+        $(".form9").addClass("present");
+    };
+}
+
