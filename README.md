@@ -14,4 +14,4 @@ The application can be easily accessed via the following URL: https://yarvelo23.
 
 Below is a visual demonstration of the application functionality:
 
-![DayPlannerDemo](/Assets/gif/day-planner-demo.gif)
+![DayPlannerDemo](/Assets/img/day-planner-demo.gif)
