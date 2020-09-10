@@ -75,10 +75,129 @@ function verifyTime() {
         $(".form8").addClass("past");
     }
     else if (currentTime.isBefore(time1)) {
-        $(".form9").addClass("future");
+        $(".form8").addClass("future");
     }
     else if (currentTime.isSame(time1)) {
+        $(".form8").addClass("present");
+    };
+
+    // 9am time
+    time2 = moment().startOf('day').add(9, "hours");
+
+    if (currentTime.isAfter(time2)) {
+        $(".form9").addClass("past");
+    }
+    else if (currentTime.isBefore(time2)) {
+        $(".form9").addClass("future");
+    }
+    else if (currentTime.isSame(time2)) {
         $(".form9").addClass("present");
     };
+
+    // 10am time
+    time3 = moment().startOf('day').add(10, "hours");
+
+    if (currentTime.isAfter(time3)) {
+        $(".form10").addClass("past");
+    }
+    else if (currentTime.isBefore(time3)) {
+        $(".form10").addClass("future");
+    }
+    else if (currentTime.isSame(time3)) {
+        $(".form10").addClass("present");
+    };
+
+    // 11am time
+    time4 = moment().startOf('day').add(11, "hours");
+
+    if (currentTime.isAfter(time4)) {
+        $(".form11").addClass("past");
+    }
+    else if (currentTime.isBefore(time4)) {
+        $(".form11").addClass("future");
+    }
+    else if (currentTime.isSame(time4)) {
+        $(".form11").addClass("present");
+    };
+
+    // 12pm time
+    time5 = moment().startOf('day').add(12, "hours");
+
+    if (currentTime.isAfter(time5)) {
+        $(".form12").addClass("past");
+    }
+    else if (currentTime.isBefore(time5)) {
+        $(".form12").addClass("future");
+    }
+    else if (currentTime.isSame(time5)) {
+        $(".form12").addClass("present");
+    };
+
+    // 1pm time
+    time6 = moment().startOf('day').add(13, "hours");
+
+    if (currentTime.isAfter(time6)) {
+        $(".form1").addClass("past");
+    }
+    else if (currentTime.isBefore(time6)) {
+        $(".form1").addClass("future");
+    }
+    else if (currentTime.isSame(time6)) {
+        $(".form1").addClass("present");
+    };
+
+    // 2pm time
+    time7 = moment().startOf('day').add(14, "hours");
+
+    if (currentTime.isAfter(time7)) {
+        $(".form2").addClass("past");
+    }
+    else if (currentTime.isBefore(time7)) {
+        $(".form2").addClass("future");
+    }
+    else if (currentTime.isSame(time7)) {
+        $(".form2").addClass("present");
+    };
+
+    // 3pm time
+    time8 = moment().startOf('day').add(15, "hours");
+
+    if (currentTime.isAfter(time8)) {
+        $(".form3").addClass("past");
+    }
+    else if (currentTime.isBefore(time8)) {
+        $(".form3").addClass("future");
+    }
+    else if (currentTime.isSame(time8)) {
+        $(".form3").addClass("present");
+    };
+
+    // 4pm time
+    time9 = moment().startOf('day').add(16, "hours");
+
+    if (currentTime.isAfter(time9)) {
+        $(".form4").addClass("past");
+    }
+    else if (currentTime.isBefore(time9)) {
+        $(".form4").addClass("future");
+    }
+    else if (currentTime.isSame(time9)) {
+        $(".form4").addClass("present");
+    };
+
+    // 5pm time
+    time10 = moment().startOf('day').add(17, "hours");
+
+    if (currentTime.isAfter(time10)) {
+        $(".form5").addClass("past");
+    }
+    else if (currentTime.isBefore(time10)) {
+        $(".form5").addClass("future");
+    }
+    else if (currentTime.isSame(time10)) {
+        $(".form5").addClass("present");
+    };
 }
+
+verifyTime();
 
