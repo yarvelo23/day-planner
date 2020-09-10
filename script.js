@@ -210,3 +210,11 @@ for (var i = 0; i < input.length; i++) {
     $(".form" + input[i]).val(inputHour);
 }
 
+// adding event listener to the save button to store in local storage
+$(".saveBtn").click(function () {
+    event.preventDefault();
+    var inputText = $(this).siblings(".form-control").val();
+    console.log("Success!");
+    var listItem = $(this).parent().data("hour");
+    localStorage.setItem(listItem, inputText);
+});
