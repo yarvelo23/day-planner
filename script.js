@@ -201,3 +201,12 @@ function verifyTime() {
 
 verifyTime();
 
+// variable to hold input
+var input = [8, 9, 10, 11, 12, 1, 2, 3, 4, 5];
+
+// for loop
+for (var i = 0; i < input.length; i++) {
+    var inputHour = localStorage.getItem(input[i]);
+    $(".form" + input[i]).val(inputHour);
+}
+
